@@ -18,13 +18,18 @@
   .print h2 { margin: 0 0 6px; font-size: 1.1rem; }
   .print p { margin: 0; }
   .credit { margin-top: 24px; color: #9a8774; font-size: 0.85rem; }
+  model-viewer { width: 100%; height: auto; aspect-ratio: 3 / 2; display: block; border-radius: 12px; background: #eef1f6; --poster-color: transparent; }
+  .hint { margin: 6px 0 0; font-size: 0.9rem; text-align: center; opacity: 0.6; }
 </style>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
 </head>
 <body>
 <main>
   <h1>Cursed Benchy</h1>
   <p class="intro">A 65 × 37 × 51 mm 3DBenchy wearing three millimetres of square setts. Still one colour, still no supports, now 632,000 triangles of cobblestone.</p>
-  <img src="img/hero.png" alt="Cursed Benchy">
+  <model-viewer src="cursed_benchy.glb" poster="img/hero.png" alt="Cursed Benchy" camera-controls auto-rotate
+    touch-action="pan-y" environment-image="neutral" shadow-intensity="1" camera-orbit="-35deg 72deg auto"></model-viewer>
+  <p class="hint">Drag to turn it, scroll or pinch to zoom.</p>
 
   <div class="grid">
     <div>
